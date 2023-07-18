@@ -5,7 +5,7 @@ today = datetime.date.today()
 monday = today - datetime.timedelta(days=today.weekday())
 friday = monday + datetime.timedelta(days=4)
 
-file = open("/Users/louisgenzel/Documents/Coding/secrets/webuntissecret", "r")
+file = open("../secrets/webuntissecret", "r")
 secret = file.read()
 secret = secret.rstrip('\n')
 apiToken = secret
